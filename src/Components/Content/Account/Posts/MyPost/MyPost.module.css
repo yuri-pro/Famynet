@@ -1,0 +1,24 @@
+.inner{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner span{
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.inner textarea{
+    min-width: 700px;
+    height: 50px;
+    border: 2px solid blue;
+    background-color: rgba(223, 222, 222, 0.753);
+}
+
+.inner button{
+    position: absolute;
+    right: -150px;
+    bottom: -18px;
+}

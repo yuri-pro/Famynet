@@ -1,0 +1,28 @@
+aside{
+    grid-area: b;
+    background-color: white;
+
+}
+
+aside a div{
+    box-sizing: border-box;
+    height: 42px;
+    color: white;
+    background-color: blue;
+    border: 2px solid lightblue;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px gray;
+    text-align: center;
+    padding: 7px;
+    font-weight: 600;
+
+}
+
+aside a div:hover{
+    background-color: rgb(14, 14, 122);
+    font-size: 18px;
+}
+
+aside a{
+    text-decoration: none;
+}
