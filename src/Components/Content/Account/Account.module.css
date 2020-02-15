@@ -1,0 +1,29 @@
+.inner{
+    width: 100%;
+    display: flex;
+}
+
+.inner img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 18px 14px 27px rgba(128, 128, 128, 0.239);
+    margin: 30px;
+    border-radius: 50px;
+}
+
+.inner div{
+    box-sizing: border-box;
+    margin: 40px;
+    height: 180px;
+    width: 500px;
+    padding: 10px;
+    border: 0.5px solid rgba(128, 128, 128, 0.082);
+    box-shadow: 18px 14px 27px rgba(128, 128, 128, 0.239);
+    border-radius: 50px;
+}
+
+.inner div span{
+    font-weight: 800;
+    color: darkblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,4 +1,10 @@
-div{
+.main{
   margin: 0 auto;
   box-sizing: border-box;
+  display:grid;
+  grid-template-areas: "a a" "b c";
+  grid-template-rows:1fr 9fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 20px; 
+  background-color: rgba(246, 242, 242, 0.541);
 }

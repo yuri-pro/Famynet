@@ -1,0 +1,6 @@
+.inner{
+    grid-area: c;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
