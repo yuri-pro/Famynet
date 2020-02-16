@@ -26,3 +26,9 @@ aside a div:hover{
 aside a{
     text-decoration: none;
 }
+
+a.active div{
+    font-size: 18px;
+    border: 3px solid  blue;
+    background-color: rgb(14, 14, 122);
+}

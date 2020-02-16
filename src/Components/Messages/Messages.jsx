@@ -3,7 +3,7 @@ import messages from "./Messages.module.css";
 
 const Messages = () =>{
     return(
-            <div></div>
+            <div>Messages</div>
     )
 }
 
