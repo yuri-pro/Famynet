@@ -30,8 +30,7 @@
 .friend__post>span{
     font-weight: 600;
     height: 40px;
-    margin: 0 auto;
-    display: inline-block;
+   text-align: center;
 }
 
 .post__inner{
