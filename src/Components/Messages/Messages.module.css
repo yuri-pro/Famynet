@@ -34,3 +34,7 @@
 .friendInner div:hover{
    background-color: rgb(19, 137, 233);
 }
+
+.friendInner a{
+    text-decoration: none;
+}
