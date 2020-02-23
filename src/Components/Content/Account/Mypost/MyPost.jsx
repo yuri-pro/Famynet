@@ -3,6 +3,9 @@ import mypost from "./MyPost.module.css";
 import Posts from "./Posts/Posts";
 
 const Mypost = () => {
+
+const mapPostData = postData.map(item => (<Posts message ={item.message} like ={item.like} name={item.name}/>) );
+    
     return(
         <div>
             <section className={mypost.inner}>
@@ -10,8 +13,7 @@ const Mypost = () => {
                 <textarea name="mypost" id="" cols="30" placeholder="Write your post..." rows="10"></textarea>
                 <button>POST</button>
             </section>
-            <Posts message ="My first react post" like ="5" name="Joe Doe"/>
-            <Posts message = "My second react post" like ="12" name="Chuck Norris" />
+            { mapPostData }
         </div>
     )
 }

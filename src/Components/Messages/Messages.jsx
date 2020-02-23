@@ -5,20 +5,19 @@ import UserMsg from "./UserMsgName/UserMsgName";
 import UserMsgInner from "./UserMsgChat/UserMsgChat";
 
 const Messages = (props) =>{
+
+const mapUserData = userData.map(item => (<UserMsg id={item.id} name ={item.name}/>) );
+
+const mapMsgData = msgData.map(item => (<UserMsgInner msgInner={item.msgInner} id= {item.id} />) );
+
     return(
             <div className={msg.inner}>
-                <div className={msg.friendInner}>               {/* setting out routes for users to show msg */}
-                    <UserMsg id="1" name ="Yuri" />
-                    <UserMsg id="2" name ="Dmitrij" />
-                    <UserMsg id="3" name ="Anastasija" />
-                    <UserMsg id="4" name ="Evgenij" />
-                    <UserMsg id="5" name ="Krowka" />
-                    <UserMsg id="6" name ="Unknown" />
+                <div className={msg.friendInner}>              
+                    { mapUserData }
                 </div>
                 <div className ={msg.chatInner}>
-                    <UserMsgInner msgInner="Hi how are you?" />
-                    <UserMsgInner msgInner="Are you here?" />
-                    <UserMsgInner msgInner="Yep, how can I help you?" />
+                    { mapMsgData }
+                    
                 </div>
             </div>
     )
