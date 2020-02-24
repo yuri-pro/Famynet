@@ -6,9 +6,9 @@ import UserMsgInner from "./UserMsgChat/UserMsgChat";
 
 const Messages = (props) =>{
 
-const mapUserData = userData.map(item => (<UserMsg id={item.id} name ={item.name}/>) );
+const mapUserData = props.userData.map(item => (<UserMsg id={item.id} name ={item.name}/>) );
 
-const mapMsgData = msgData.map(item => (<UserMsgInner msgInner={item.msgInner} id= {item.id} />) );
+const mapMsgData = props.msgData.map(item => (<UserMsgInner msgInner={item.msgInner} id= {item.id} />) );
 
     return(
             <div className={msg.inner}>

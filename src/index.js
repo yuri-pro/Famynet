@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
  //data for myPost.jsx
 const postData = [        
     {id:1, name:"Joe Doe", message:"My first react post", like:5},
@@ -29,7 +27,7 @@ const msgData =[
     {id:3, msgInner: "Yep, how can I help you?"}
 ]
 
-
+ReactDOM.render(<App posts={postData} />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

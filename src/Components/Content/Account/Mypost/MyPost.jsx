@@ -2,9 +2,9 @@ import React from 'react';
 import mypost from "./MyPost.module.css";
 import Posts from "./Posts/Posts";
 
-const Mypost = () => {
+const Mypost = (props) => {
 
-const mapPostData = postData.map(item => (<Posts message ={item.message} like ={item.like} name={item.name}/>) );
+const mapPostData = props.postData.map(item => (<Posts message ={item.message} like ={item.like} name={item.name}/>) );
     
     return(
         <div>
