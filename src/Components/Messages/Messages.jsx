@@ -1,14 +1,12 @@
 import React from "react";
 import msg from "./Messages.module.css";
-import { NavLink } from "react-router-dom";
 import UserMsg from "./UserMsgName/UserMsgName";
 import UserMsgInner from "./UserMsgChat/UserMsgChat";
 
 const Messages = (props) =>{
+const mapUserData = props.state.messagesPage.userData.map(item => (<UserMsg id={item.id} name ={item.name}/>) );
 
-const mapUserData = props.userData.map(item => (<UserMsg id={item.id} name ={item.name}/>) );
-
-const mapMsgData = props.msgData.map(item => (<UserMsgInner msgInner={item.msgInner} id= {item.id} />) );
+const mapMsgData = props.state.messagesPage.msgData.map(item => (<UserMsgInner msgInner={item.msgInner} id= {item.id} />) );
 
     return(
             <div className={msg.inner}>

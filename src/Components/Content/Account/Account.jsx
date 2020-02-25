@@ -1,7 +1,7 @@
 import React from 'react';
 import accinner from "./Account.module.css";
 
-const Account = () => {
+const Account = (props) => {
     return(
             <section className={accinner.inner}>
                 <img src="https://i.pinimg.com/originals/7e/6d/6e/7e6d6ef9abe585d49386ca8f36101a34.jpg" alt="profile"/>

@@ -3,9 +3,8 @@ import mypost from "./MyPost.module.css";
 import Posts from "./Posts/Posts";
 
 const Mypost = (props) => {
-
-const mapPostData = props.postData.map(item => (<Posts message ={item.message} like ={item.like} name={item.name}/>) );
-    
+    debugger;
+const mapPostData = props.posts.map(item => (<Posts message ={item.message} like ={item.like} name={item.name}/>) );
     return(
         <div>
             <section className={mypost.inner}>

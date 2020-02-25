@@ -1,13 +1,14 @@
 import React from 'react';
 import continner from "./Content.module.css";
 import Account from "./Account/Account";
-import MyPost from "./Account/Mypost/MyPost";
+import MyPost from "./MyPost/MyPost";
 
 const Content =(props) =>{
+    debugger;
     return(
         <section className={continner.inner}>
             <Account />
-            <MyPost posts={props.postData} />
+            <MyPost posts={props.state.profilePage.postData} />
         </section>
     )
 }

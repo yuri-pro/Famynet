@@ -16,8 +16,8 @@ const App = (props)=> {
         <Header />
         <Sidebar />
         <div className="main__inner">
-          <Route path="/Content" render={ () => <Content posts={props.postData} />}/>
-          <Route path="/Messages" render={ () => <Messages />} />
+          <Route path="/Content" render={ () => <Content state={ props.state } />}/>
+          <Route path="/Messages" render={ () => <Messages state={ props.state }  />} />
           <Route path="/News" component={News} />
           <Route path="/Music" component={Music} />
           <Route path="/Settings" component={Settings} />
