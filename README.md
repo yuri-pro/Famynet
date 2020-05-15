@@ -1,2 +1,3 @@
 # Famynet
-Playing with React, Git- creating own social network
+Playing with React, Git-  social network
+>>UNFINISHED<<
